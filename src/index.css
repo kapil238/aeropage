@@ -1,0 +1,412 @@
+*{padding: 0px;
+  margin:  0px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;}
+html, body {
+  width: 100%;
+  min-height: 100%; 
+}
+
+
+.mar-top{
+  margin-top: 40px;
+}
+
+.mar-bot{
+  margin-top: 40px;
+}
+
+.mb{
+  margin-bottom: 16px;
+}
+
+.d-flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+/* ==========================================================START HEADER========================================================================= */
+
+header {
+  position: fixed; /* Keep the header fixed at the top */
+  top: 0;
+  height: 70px; /* Adjust the height as needed */
+  width: 100%; /* Ensure the header spans the full width of the page */
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px #505152;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB24AAAOzAQMAAABK5rRXAAAABlBMVEUAAAAAAAClZ7nPAAAAAnRSTlMACHhIRQoAAATeSURBVHja7NuxDYRAEATBC+Hzj/UlIAW8EV3ntDuFcPc873dOKBsrcHFxcXFxG9lYgYuL+y5X6f3Pxkf3M+Pi4uLiVrKxAhcXFxcXt5GNFbi4uLi4uI1srMDFxcXFxW1kYwUuLi4uLm4jGytwcXFxcXEb2ViBi4uLixvlXqXnjujr2ViBi4uLi4vbyMYKXFxcXFzcRjZW4OLi4uLiNrKxAhcXFxcXt5GNFbi4uLi4uI1srMDFxcXFxW1kYwUuLi6uOyJ3RI1srMDFxcXFxW1kYwUuLi4uLm4jGytwcXFxcXEb2ViBi4uLi4vbyMYKXFxcXFzcRjZW4OLi4uLiNrKxAhcXF9cdkTuiRjZW4OLi4uLiNrKxAhcXFxcXt5GNFbi4uLi4uI1srMDFxcXFxW1kYwUuLi4uLm4jGytwcXFxcXEb2ViBi4uL647IHVEjGytwcXFxcXEb2ViBi4uLi4t7s2/HNAAAAAjD/LvGBsl68a4CaMxHBS4uLi4ubmM+KnBxcXFxcRvzUYGLi4uLi9uYjwpcXFxcXNzGfFTg4uLi+hH5ETXmowIXFxcXF7cxHxW4uLi4uLiN+ajAxcXFxcVtzEcFLi4uLi5uYz4qcHFxcXFxG/NRgYuLi4uL25iPClxcXFw/Ij+ixnxU4OLi4uLiNuajAhcXFxcXtzEfFbi4uLi4uI35qMDFxcXFxW3MRwUuLi4ubmM+KnBxcXH9iPyIGvNRgYuLi4uL25iPClxcXFxc3MZ8VODi4uLi4jbmowIXFxcXF7cxHxW4uLi4uLiN+ajAxcXFxR37dkwDAACAMMy/a2yQrBfvKgDcxnxU4OLi4voR+RE15qMCFxcXFxe3MR8VuLi4uLi4jfmowMXFxcXFbcxHBS4uLq4fkR9RYz4qcHFxcXFxG/NRgYuLi4uL25iPClxcXNy1b8c0AAAwDMP4sx6IPZXiK28NoLi4jWyswMXFxcXFbWRjBS4uLi4ubiMbK3BxcXFxcRvZWIGLi4vrR+RH1MjGClxcXFxc3EY2VuDi4uLi4jaysQIXFxcXF7eRjRW4uLi4uLiNbKzAxcXFxcVtZGMFLi4uLi5uIxsrcHFxcf2I/Iga2ViBi4uLi4vbyMYKXFxcXFzcRjZW4OLi4uLiNrKxAhcXFxcXt5GNFbi4uLi4uI1srMDFxcXFxW1kYwUuLi6uH5EfUSMbK3BxcXFxcRvZWIGLi4uLi9vIxgpcXFxcXNxGNlbg4uLi4uI2srECF/ebA3EEd5kr8tCIAAAAAElFTkSuQmCC'); /* Background image */
+  background-size: cover; /* Ensure the image covers the entire header */
+  background-position: center; /* Center the image */
+  z-index: 1000; /* Ensure the header stays above other content */
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  color: white; /* Adjust text color if necessary */
+}
+
+
+.header-inner {
+  position: relative; /* Allows content to be positioned over the background */
+  padding: 20px; /* Add some padding */
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between logo and nav */
+}
+
+.header-inner{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  /* font-size: 1.3rem; */
+  cursor: pointer;
+  color: #ece9ea;
+  width: 10%;
+}
+.logo img{
+  width: 100%;
+}
+.logo:hover{
+  color: whitesmoke;
+}
+section, footer{
+  /* display: flex; */
+  justify-content: center;
+  font-size: 3rem;
+}
+/* section{
+  height: 100vh; */
+  /* color: rosybrown;  
+} */
+nav{
+  flex: 0.5;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.dropdown-menu {
+  position: absolute; /* Position relative to the parent */
+  background-color: #fdfdfd; /* Background color for dropdown */
+  border-radius: 5px; /* Rounded corners */
+  display: flex;
+  flex-direction: column;
+  z-index: 1000; /* Make sure it appears above other elements */
+}
+
+.dropdown-menu a {
+  padding: 10px 20px; /* Spacing for dropdown items */
+  color: rgb(45, 45, 45); /* Text color */
+  text-decoration: none; /* No underline */
+}
+
+.dropdown-menu a:hover {
+  background-color: #ffffff; /* Background on hover */
+}
+
+
+
+
+
+/* ==========================================================END HEADER========================================================================= */
+
+
+
+/* ==========================================================START HOME========================================================================= */
+
+#Home{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.home-inner{
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB24AAAOzAQMAAABK5rRXAAAABlBMVEUAAAAAAAClZ7nPAAAAAnRSTlMACHhIRQoAAATeSURBVHja7NuxDYRAEATBC+Hzj/UlIAW8EV3ntDuFcPc873dOKBsrcHFxcXFxG9lYgYuL+y5X6f3Pxkf3M+Pi4uLiVrKxAhcXFxcXt5GNFbi4uLi4uI1srMDFxcXFxW1kYwUuLi4uLm4jGytwcXFxcXEb2ViBi4uLixvlXqXnjujr2ViBi4uLi4vbyMYKXFxcXFzcRjZW4OLi4uLiNrKxAhcXFxcXt5GNFbi4uLi4uI1srMDFxcXFxW1kYwUuLi6uOyJ3RI1srMDFxcXFxW1kYwUuLi4uLm4jGytwcXFxcXEb2ViBi4uLi4vbyMYKXFxcXFzcRjZW4OLi4uLiNrKxAhcXF9cdkTuiRjZW4OLi4uLiNrKxAhcXFxcXt5GNFbi4uLi4uI1srMDFxcXFxW1kYwUuLi4uLm4jGytwcXFxcXEb2ViBi4uL647IHVEjGytwcXFxcXEb2ViBi4uLi4t7s2/HNAAAAAjD/LvGBsl68a4CaMxHBS4uLi4ubmM+KnBxcXFxcRvzUYGLi4uLi9uYjwpcXFxcXNzGfFTg4uLi+hH5ETXmowIXFxcXF7cxHxW4uLi4uLiN+ajAxcXFxcVtzEcFLi4uLi5uYz4qcHFxcXFxG/NRgYuLi4uL25iPClxcXFw/Ij+ixnxU4OLi4uLiNuajAhcXFxcXtzEfFbi4uLi4uI35qMDFxcXFxW3MRwUuLi4uLm5jPipwcXFxcXEb81GBi4uL60fkR9SYjwpcXFxcXNzGfFTg4uLi4uI25qMCFxcXFxe3MR8VuLi4uLi4jfmowMXFxcXFbcxHBS4uLi4ubmM+KnBxcXH9iPyIGvNRgYuLi4uL25iPClxcXFxc3MZ8VODi4uLi4jbmowIXFxcXF7cxHxW4uLi4uLiN+ajAxcXFxR37dkwDAACAMMy/a2yQrBfvKgDcxnxU4OLi4voR+RE15qMCFxcXFxe3MR8VuLi4uLi4jfmowMXFxcXFbcxHBS4uLi4ubmM+KnBxcXFxcRvzUYGLi4uLi9uYjwpcXFxcPyI/osZ8VODi4uLi4jbmowIXFxcXF7cxHxW4uLi4uLiN+ajAxcXFxcVtzEcFLi4uLi5uYz4qcHFxcXFxG/NRgYuLi+tH5EfUmI8KXFxcXFzcxnxU4OLi4uLiNuajAhcXFxcXtzEfFbi4uLi4uI35qMDFxcXFxW3MRwUuLi4uLm5jPipwcXFx/Yj8iBrzUYGLi4uLi9uYjwpcXFxcXNzGfFTg4uLi4uI25qMCFxcXFxe3MR8VuLi4uLi4jfmowMXFxcXFbcxHBS4uLq4fkR9RYz4qcHFxcXFxG/NRgYuLi4uL25iPClxcXNy1b8c0AAAwDMP4sx6IPZXiK28NoLi4jWyswMXFxcXFbWRjBS4uLi4ubiMbK3BxcXFxcRvZWIGLi4vrR+RH1MjGClxcXFxc3EY2VuDi4uLi4jaysQIXFxcXF7eRjRW4uLi4uLiNbKzAxcXFxcVtZGMFLi4uLi5uIxsrcHFxcf2I/Iga2ViBi4uLi4vbyMYKXFxcXFzcRjZW4OLi4uLiNrKxAhcXFxcXt5GNFbi4uLi4uI1srMDFxcXFxW1kYwUuLi6uH5EfUSMbK3BxcXFxcRvZWIGLi4uLi9vIxgpcXFxcXNxGNlbg4uLi4uI2srECF/ebA3EEd5kr8tCIAAAAAElFTkSuQmCC'); /* Replace with your image URL */
+  width: 90%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  margin: auto;
+}
+
+.home-inner {
+  position: relative; /* Allows content to be positioned over the background */
+  padding: 20px; /* Add some padding */
+  display: flex;
+  align-items: center; /* Center items vertically */ 
+
+}
+
+.home-top{
+  height: 60px;
+  align-items: center;
+  gap: 20px ;
+  justify-content: center;
+}
+
+.home-top img{
+  width: 40px;
+  height: 40px;
+  gap: 10px;
+}
+
+.home-med{
+  text-align: center;
+  justify-content: center;
+}
+
+.ver{
+  /* background-color: rgb(234 88 12 ); */
+  color: rgb(234 88 12);
+  background-color: rgb(253, 229, 221);
+  border-radius: 5px;
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 600;
+  padding: 5px 20px;
+}
+
+.cl-1{
+  color: rgb(234 88 12);
+}
+
+.cl-2{
+  font-size: 3rem;
+  line-height: 1.25;
+  font-weight: 600;
+  font-family: REM, sans-serif;
+}
+
+
+.home-cen{
+  text-align: center;
+  /* margin: 0px 100px 0; */
+  justify-content: center;
+}
+.home-cen p{
+  font-size: 1rem;
+  line-height: 2rem;
+  max-width: 48rem
+}
+
+.home-bot{
+  text-align: center;
+}
+.home-bot h4{
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.available{
+  justify-content: center;
+}
+.available{
+  gap: 1rem;
+
+}
+.box-avail{
+  width: auto;
+  font-size: 15px;
+  padding: 12px;
+  border: 0.5px solid rgb(143, 143, 143);
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 6px 9px 8px 3px;
+}
+
+.box-avail img{
+  width: 40px;
+  margin: 0 10px;
+}
+
+.avail-but{
+  margin-top: 50px;
+  justify-content: center;
+  gap: 10px;
+  
+}
+
+.ava-but-1{
+  background-color: rgb(234 88 12 );
+}
+
+/* ==========================================================END HOME========================================================================= */
+
+
+/* ==========================================================START DEMOS========================================================================= */
+
+
+#Demos{
+  /* background-color: #F9E6D2; */
+  padding-top: 50px;
+  /* padding-bottom: 100px; */
+}
+.demo-inner{
+  width: 90%;
+  /* display: flex; */
+  /* align-items: center; */
+  justify-content: center;
+  margin: auto;
+}
+
+.demo-inner {
+  position: relative; /* Allows content to be positioned over the background */
+  padding: 20px; /* Add some padding */
+  /* display: flex; */
+  align-items: center; /* Center items vertically */ 
+
+}
+.demo{
+  color: rgb(234 88 12);
+  background-color: rgb(253, 229, 221);
+  border-radius: 10px;
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 600;
+  padding: 0px 20px;
+  border-left: 3px solid;
+  border-right: 3px solid;
+
+}
+
+.demo-text-1{
+  font-size: 1.875rem;
+  line-height: 2.25;
+  font-weight: 600;
+  font-family: REM, sans-serif;
+  text-align: center;
+}
+.demo-med{
+  justify-content: center;
+}
+.demo-med p{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  justify-content: center;
+}
+.demo-bot{
+  justify-content: center;
+  gap: 30px;
+}
+
+
+
+
+/* ==========================================================END DEMOS========================================================================= */
+
+
+
+/* ==========================================================START FEATUREs========================================================================= */
+#Projects{
+  background-color: #e0e7ca;
+}
+.icon{
+  justify-content: center;
+}
+.title{
+  justify-content: center;
+
+}
+.description{
+  justify-content: center;
+
+}
+.Features-bot{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* ==========================================================END FEATUREs========================================================================= */
+
+
+/* ==========================================================START LANDing========================================================================= */
+
+#Contact{
+  background-color: #D7ECF6;
+}
+
+/* ==========================================================START LANDing========================================================================= */
+
+footer{
+  height: 200px;
+  background: #505152;
+  color: white;
+}
+
+
+.hamburger-btn{
+  font-size: 1.3rem;
+  position: absolute;
+  bottom: 0;
+  width: 40px;
+  height: 35px;
+  right: 30px;
+  outline: none;
+  background-color: rgb(134, 125, 125);
+  color: whitesmoke;
+}
+.addTransiton{
+  transform: translateX(170px);
+  transition: transform 0.5s ease-in-out;
+}
+.removeTransition{
+  transform: translateX(20px);
+  transition: transform 0.5s ease-in-out;
+}
+
+#sidebar-list{
+  background-color: rgb(134, 125, 125);
+  height: 90vh;
+  width: 170px;
+  position: absolute;
+  z-index: 2000;
+  right: 0;
+  top: 0;
+  margin-top: 70px;
+}
+.nav-big{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  font-weight: bold;
+}
+
+.nav-big-link{
+ cursor: pointer;
+ color: rgb(0, 0, 0);
+ text-decoration: none !important;
+ font-size: larger;
+}
+
+.nav-big-link:hover {
+  color: rgb(234,88,12,1); /* Replace with your desired hover color */
+}
+
+.nav-small{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  margin: auto;
+  height: 40%;
+  margin-top: 50px;
+  width: 80%;
+}
+.nav-small-link{
+  cursor: pointer;
+  color: whitesmoke;
+  padding-bottom: 5px;
+}
+
+
+
+
